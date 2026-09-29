@@ -137,7 +137,7 @@ footer{padding:34px 0;text-align:center;color:var(--muted);font-size:14px;border
     <div class="gold-line"></div>
     <div class="feat-grid">
       <div class="feat"><div class="num">0,01<span style="font-size:20px"> мм</span></div><p>точность лазерной гравировки</p></div>
-      <div class="feat"><div class="num">1<span style="font-size:20px"> день</span></div><p>срок изготовления простых заказов</p></div>
+      <div class="feat"><div class="num">20<span style="font-size:20px"> минут</span></div><p>срок изготовления простых заказов</p></div>
       <div class="feat"><div class="num">1<span style="font-size:20px"> шт</span></div><p>минимальный заказ — даже одна ручка</p></div>
       <div class="feat"><div class="num">5000<span style="font-size:20px">+</span></div><p>выполненных работ за время работы студии</p></div>
     </div>
@@ -193,10 +193,12 @@ footer{padding:34px 0;text-align:center;color:var(--muted);font-size:14px;border
   <div class="container c-wrap">
     <div class="c-info">
       <h3>Свяжитесь с нами</h3>
-      <p>📍 <b>г. Санкт-Петербург</b>, ул. Примерная, д. 1 (замените на свой адрес)</p>
-      <p>📞 <b>+7 (900) 123-45-67</b> — замените на свой номер</p>
-      <p>✉️ <b>info@sanlazer.ru</b></p>
-      <p>🕐 Пн–Сб: 10:00–20:00</p>
+      <p>📍 <b>г. Москва</b>, ул. 2я Машиностроения, д. 17, стр. 1, офис 224 </p>
+      <p>📞 <b>+7 (926) 374-74-03</b>  </p>
+      <p>✉️ <b>s89263747403@gmail.com</b></p>
+      <p>🕐 Пн–ср: 10:00–20:00</p>
+      <p>🕐 Чт–пт: 10:00–18:00</p>
+      <p>🕐 Сб: 11:00–15:00</p>
       <p style="margin-top:20px">Пришлите фото или эскиз — рассчитаем стоимость за 15 минут.</p>
     </div>
     <form onsubmit="sendForm(event)">
@@ -215,15 +217,15 @@ footer{padding:34px 0;text-align:center;color:var(--muted);font-size:14px;border
 <footer>© 2026 Студия лазерной гравировки «Санлазер». Все права защищены.</footer>
 
 <script>
-/* Форма: подставьте свой номер WhatsApp вместо 79001234567 */
+/* Форма: подставьте свой номер вместо 79001234567 */
 function sendForm(e){
   e.preventDefault();
   var t = "Заявка с сайта Санлазер%0AИмя: " + document.getElementById('f-name').value +
           "%0AТелефон: " + document.getElementById('f-phone').value +
           "%0AУслуга: " + document.getElementById('f-type').value +
           "%0AЗаказ: " + document.getElementById('f-msg').value;
-  window.open('https://wa.me/79001234567?text=' + t, '_blank');
-  alert('Спасибо! Заявка сформирована — отправьте её в WhatsApp.');
+  window.open('https://t.me/+79263747403?text=' + t, '_blank');
+  alert('Спасибо! Заявка сформирована — отправьте её в Телеграмм.');
 }
 document.querySelectorAll('nav a').forEach(function(a){
   a.addEventListener('click',function(){document.getElementById('menu').classList.remove('open')});
